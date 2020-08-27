@@ -21,4 +21,4 @@ export type Marker = {
   item: any
 }
 
-export {FormFieldPresence as Presence} from '@sanity/components/lib/presence/types'
+export {FormFieldPresence as Presence} from '@sanity/base/lib/presence/types'

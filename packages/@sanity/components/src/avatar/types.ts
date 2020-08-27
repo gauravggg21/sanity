@@ -1,3 +1,3 @@
-export type Position = 'top' | 'bottom' | 'inside' | null
-export type Size = 'xsmall' | 'small' | 'medium'
-export type Status = 'online' | 'editing' | 'inactive'
+export type AvatarPosition = 'top' | 'bottom' | 'inside' | null
+export type AvatarSize = 'xsmall' | 'small' | 'medium'
+export type AvatarStatus = 'online' | 'editing' | 'inactive'

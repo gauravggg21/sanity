@@ -2,7 +2,7 @@ import classNames from 'classnames'
 import React, {useState, useEffect} from 'react'
 import {useId} from '@reach/auto-id'
 import styles from './Avatar.css'
-import {Position, Status, Size} from './types'
+import {AvatarPosition, AvatarStatus, AvatarSize} from './types'
 
 type Props = {
   borderColor: string
@@ -11,10 +11,10 @@ type Props = {
   isAnimating?: boolean
   children?: React.ReactNode
   onImageLoadError?: (event: Error) => void
-  position?: Position
-  animateArrowFrom?: Position
-  status?: Status
-  size?: Size
+  position?: AvatarPosition
+  animateArrowFrom?: AvatarPosition
+  status?: AvatarStatus
+  size?: AvatarSize
   tone?: 'navbar'
 }
 
@@ -111,7 +111,11 @@ export default function Avatar({
               </pattern>
             </defs>
           </svg>
-          {children && <div className={styles.avatarInitials}>{children}</div>}
+          {children && (
+            <div className={styles.avatarInitials} style={{background: borderColor}}>
+              {children}
+            </div>
+          )}
         </div>
       </div>
     </div>

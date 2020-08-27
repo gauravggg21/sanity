@@ -3,7 +3,7 @@ import React, {FunctionComponent} from 'react'
 import FullscreenDialog from 'part:@sanity/components/dialogs/fullscreen'
 import Stacked from 'part:@sanity/components/utilities/stacked'
 import {PortableTextBlock, Type, PortableTextChild} from '@sanity/portable-text-editor'
-import {PresenceOverlay} from '@sanity/base/presence'
+import {PresenceOverlay} from 'part:@sanity/base/presence'
 
 import {FormBuilderInput} from '../../../../FormBuilderInput'
 import {Marker, Presence} from '../../../../typedefs'

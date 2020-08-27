@@ -15,7 +15,7 @@ import ButtonGrid from 'part:@sanity/components/buttons/button-grid'
 import DefaultDialog from 'part:@sanity/components/dialogs/default'
 import FullscreenDialog from 'part:@sanity/components/dialogs/fullscreen'
 import DialogContent from 'part:@sanity/components/dialogs/content'
-import {PresenceOverlay} from '@sanity/base/presence'
+import {PresenceOverlay} from 'part:@sanity/base/presence'
 import DropDownButton from 'part:@sanity/components/buttons/dropdown'
 import EditIcon from 'part:@sanity/base/edit-icon'
 import Fieldset from 'part:@sanity/components/fieldsets/default'
@@ -373,21 +373,21 @@ export default class ImageInput extends React.PureComponent<Props, ImageInputSta
         <PresenceOverlay>
           <DialogContent size={withImageTool ? 'large' : 'medium'}>
             {withImageTool && (
-          <WithMaterializedReference materialize={materialize} reference={value.asset}>
-            {imageAsset => (
-              <ImageToolInput
-                type={type}
-                level={level}
-                readOnly={readOnly}
-                imageUrl={this.getConstrainedImageSrc(imageAsset)}
-                value={value}
-                onChange={onChange}
-              />
+              <WithMaterializedReference materialize={materialize} reference={value.asset}>
+                {imageAsset => (
+                  <ImageToolInput
+                    type={type}
+                    level={level}
+                    readOnly={readOnly}
+                    imageUrl={this.getConstrainedImageSrc(imageAsset)}
+                    value={value}
+                    onChange={onChange}
+                  />
+                )}
+              </WithMaterializedReference>
             )}
-          </WithMaterializedReference>
-        )}
-        <div className={styles.advancedEditFields}>{this.renderFields(fields)}</div>
-        <Button onClick={this.handleStopAdvancedEdit}>Close</Button>
+            <div className={styles.advancedEditFields}>{this.renderFields(fields)}</div>
+            <Button onClick={this.handleStopAdvancedEdit}>Close</Button>
           </DialogContent>
         </PresenceOverlay>
       </Dialog>

@@ -1,5 +1,5 @@
 import React from 'react'
-import {UserAvatar, Props as UserAvatarProps} from '../avatar/UserAvatar'
+import {UserAvatar, Props as UserAvatarProps} from '../components/UserAvatar'
 import {Status} from './types'
 
 export type Props = UserAvatarProps & {

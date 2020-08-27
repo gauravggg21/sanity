@@ -1046,6 +1046,10 @@
     {
       "implements": "part:@sanity/base/component",
       "path": "components/story.js"
+    },
+    {
+      "implements": "part:@sanity/base/presence",
+      "path": "presence"
     }
   ]
 }

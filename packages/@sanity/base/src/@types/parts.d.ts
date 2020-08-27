@@ -5,6 +5,13 @@ declare module 'part:@sanity/base/client' {
   export default client
 }
 
+declare module 'part:@sanity/components/avatar' {
+  // @todo
+  export const Avatar: any
+  export type AvatarPosition = any
+  export type AvatarSize = any
+}
+
 declare module 'part:@sanity/base/user' {
   import {Observable} from 'rxjs'
 

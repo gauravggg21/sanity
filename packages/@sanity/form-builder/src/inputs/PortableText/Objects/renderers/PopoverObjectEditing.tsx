@@ -6,7 +6,7 @@ import Stacked from 'part:@sanity/components/utilities/stacked'
 import DialogContent from 'part:@sanity/components/dialogs/content'
 
 import {PortableTextBlock, PortableTextChild, Type} from '@sanity/portable-text-editor'
-import {PresenceOverlay} from '@sanity/base/presence'
+import {PresenceOverlay} from 'part:@sanity/base/presence'
 import {FormBuilderInput} from '../../../../FormBuilderInput'
 import {Marker, Presence} from '../../../../typedefs'
 import {Path} from '../../../../typedefs/path'

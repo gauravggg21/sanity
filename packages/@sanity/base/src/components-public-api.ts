@@ -1,1 +1,1 @@
-export {UserAvatar} from '@sanity/components/lib/avatar/UserAvatar'
+export {UserAvatar} from './components/UserAvatar'

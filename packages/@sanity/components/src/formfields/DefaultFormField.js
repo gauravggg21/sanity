@@ -6,7 +6,7 @@ import styles from 'part:@sanity/components/formfields/default-style'
 import DefaultLabel from 'part:@sanity/components/labels/default'
 import ValidationStatus from 'part:@sanity/components/validation/status'
 import FieldStatus from '../fieldsets/FieldStatus'
-import {FieldPresence} from '../presence'
+import {FieldPresence} from 'part:@sanity/base/presence'
 
 export default class DefaultFormField extends React.PureComponent {
   static propTypes = {

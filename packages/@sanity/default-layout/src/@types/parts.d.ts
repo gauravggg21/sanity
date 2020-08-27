@@ -1,6 +1,11 @@
 // import {Observable} from 'rxjs'
 type Observable<T> = any
 
+declare module 'part:@sanity/base/presence' {
+  export const GlobalPresence: any
+  export type GlobalPresenceItem = any
+}
+
 declare module 'part:@sanity/base/login-wrapper?' {
   const Component:
     | React.ComponentType<{

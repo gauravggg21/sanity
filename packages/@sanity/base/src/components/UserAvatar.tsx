@@ -1,14 +1,13 @@
+import {Avatar, AvatarPosition, AvatarSize} from 'part:@sanity/components/avatar'
 import React, {useState} from 'react'
-import {useUser, useUserColor} from '@sanity/base/hooks'
+import {useUser, useUserColor} from '../hooks'
 import {User} from '../presence/types'
-import Avatar from './Avatar'
-import {Position, Size} from './types'
 
 interface BaseProps {
   isAnimating?: boolean
-  position?: Position
-  animateArrowFrom?: Position
-  size?: Size
+  position?: AvatarPosition
+  animateArrowFrom?: AvatarPosition
+  size?: AvatarSize
   tone?: 'navbar'
 }
 

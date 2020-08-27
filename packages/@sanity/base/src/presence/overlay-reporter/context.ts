@@ -6,7 +6,7 @@ export interface RegionReporterMountEvent {
   id: string
   element: HTMLElement
   data: any
-  component: React.ComponentType
+  component: React.ComponentType<any>
 }
 
 export interface RegionReporterUnmountEvent {
@@ -18,7 +18,7 @@ export interface RegionReporterUpdateEvent {
   type: 'update'
   id: string
   data: any
-  component: React.ComponentType
+  component: React.ComponentType<any>
 }
 
 export type RegionReporterEvent =

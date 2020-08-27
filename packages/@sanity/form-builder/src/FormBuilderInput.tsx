@@ -6,7 +6,7 @@ import PatchEvent from './PatchEvent'
 import generateHelpUrl from '@sanity/generate-help-url'
 import * as PathUtils from '@sanity/util/paths'
 import {Type, Marker, Presence} from './typedefs'
-import {Context as PresenceContext} from '@sanity/components/lib/presence'
+import {Context as PresenceContext} from 'part:@sanity/base/presence'
 import {emptyArray, emptyObject} from './utils/empty'
 
 const EMPTY_MARKERS: Marker[] = emptyArray()
